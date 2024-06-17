@@ -1,0 +1,86 @@
+@import '../../global.scss';
+@import url(../../components/login-out/login-out.scss);
+@import url(../../components/word-card/word-card.scss);
+@import url(../../components/continue-button/continue.scss);
+@import url(../../components/check-button/check-button.scss);
+@import url(../../components/completion-button/auto-complition.scss);
+@import url(../../components/translation-button/translation-button.scss);
+@import url(../../components/audio-buttons/audio.scss);
+@import url(../../components/levels-controller/levels.scss);
+@import url(../../components/rounds/rounds.scss);
+@import url(../../components/close-button/close-button.scss);
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/Roboto-Regular.ttf);
+}
+
+.game-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #eeaeca 0%, rgba(148, 187, 233, 1) 100%);
+    transition: 0.8s ease-in-out;
+}
+
+.buttons-block {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid #b88098;
+}
+
+.result-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 610px;
+    height: 500px;
+    margin: 10px auto 10px auto;
+    border-radius: 10px;
+    border: 3px solid #b88098;
+    background-color: #e7ccda73;
+}
+
+.result-line {
+    display: flex;
+    align-items: center;
+    min-width: 600px;
+    height: 46px;
+    margin: 2px 5px;
+    border-radius: 10px;
+    background-color: #e7ccdab4;
+}
+
+.sources-block {
+    display: flex;
+    align-items: center;
+    min-width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 3px solid #b88098;
+    background-color: #e7ccda73;
+}
+
+.controllers-block {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.hint-block {
+    display: flex;
+    width: fit-content;
+    height: 20px;
+    padding: 2px 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px dashed #b88098;
+    align-self: center;
+    color: #4e4a4d;
+    background-color: #ffffff25;
+}

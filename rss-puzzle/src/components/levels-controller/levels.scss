@@ -1,0 +1,109 @@
+.level-controller {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #e7ccda93;
+    border: 3px solid #c56b6b;
+    font-size: 14px;
+    align-self: center;
+    margin-left: 15px;
+    font-family: Roboto;
+    transition: 0.5s ease-in-out;
+    transition: 1s ease-in-out;
+    padding: 0 5px;
+    z-index: 3;
+    cursor: pointer;
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.levels-modal {
+    display: flex;
+    position: absolute;
+    bottom: 200%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    background-color: #0f0f0f44;
+    align-self: center;
+    font-family: Roboto;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.levels-modal_oppened {
+    bottom: 0;
+    z-index: 2;
+}
+
+.levels-modal_oppened .levels-window {
+    z-index: 3;
+}
+
+.levels-window {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 330px;
+    height: 280px;
+    border: 3px solid #c56b6b;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border-radius: 15px;
+    cursor: default;
+    .close-button {
+        top: 5px;
+        left: 305px;
+    }
+}
+
+.levels-side {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 280px;
+    border-right: 1px solid #c56b6b;
+}
+
+.levels-side__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-bottom: 1px solid #c56b6b;
+    font-size: 18px;
+}
+
+.level-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    border-bottom: 1px dashed #c56b6b;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.level-block:last-child {
+    border-bottom: 0px dashed #c56b6b;
+}
+
+.level-block:hover {
+    background-color: #ffffff4d;
+    text-shadow: rgb(247, 255, 200) 1px 0 5px;
+}
+
+.level-block_chosen {
+    font-size: 16px;
+    color: #fff;
+    text-shadow: #fc0 1px 0 10px;
+}

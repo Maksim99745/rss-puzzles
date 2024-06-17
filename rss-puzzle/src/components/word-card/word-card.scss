@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/Roboto-Regular.ttf);
+}
+
+.word-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    height: 46px;
+    outline: 2px solid #2e2b2b93;
+    border-radius: 2px;
+    background-color: #ffffff52;
+    transition: 0.5s ease-in-out;
+    font-family: Roboto;
+    transition: 1s ease-in-out;
+    color: #ffffff;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    cursor: pointer;
+}
+
+.word-card:hover {
+    background-color: #ffffff95;
+    text-shadow: rgb(0, 0, 0) 1px 0 5px;
+}
+
+.word-block_wrong {
+    outline: 2px solid red;
+}
+
+.word-block_right {
+    outline: 2px solid rgb(1, 168, 1);
+}

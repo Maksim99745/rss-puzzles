@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/Roboto-Regular.ttf);
+}
+
+.check-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90px;
+    height: 44px;
+    border-radius: 15px;
+    border: 3px solid #c56b6b;
+    background-color: #f8f8f896;
+    font-size: 17px;
+    align-self: center;
+    font-family: Roboto;
+    padding: 0 18px;
+    transition: 0.5s ease-in-out;
+    scale: 1.1;
+    box-shadow:
+        rgba(80, 80, 80, 0.35) 0px 13px 27px -5px,
+        rgba(80, 80, 80, 0.4) 0px 8px 16px -8px;
+}
+
+.check-button:hover:not(:disabled) {
+    background-color: #ffffff95;
+    text-shadow: rgb(247, 255, 200) 1px 0 5px;
+    cursor: pointer;
+}
+.check-button:disabled {
+    scale: 1;
+    background-color: #e7ccda96;
+    cursor: default;
+}
+
+.check-button:disabled:hover {
+    pointer-events: none;
+}

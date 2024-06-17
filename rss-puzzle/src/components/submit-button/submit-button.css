@@ -1,0 +1,16 @@
+.submit-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 35px;
+  border-radius: 15px;
+  border: 2px solid #c56b6b;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transform: translateX(30%);
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}/*# sourceMappingURL=submit-button.css.map */

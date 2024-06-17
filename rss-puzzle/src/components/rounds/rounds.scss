@@ -1,0 +1,55 @@
+.rounds-side {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 280px;
+}
+
+.rounds-side__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 39px;
+    border-bottom: 1px solid #c56b6b;
+    font-size: 18px;
+}
+
+.rounds-block {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 230px;
+    height: fit-content;
+    padding: 2px;
+}
+
+.round-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #c56b6b;
+    width: 28px;
+    height: 28px;
+    margin: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.round-block:hover {
+    background-color: #ffffff4d;
+    text-shadow: rgb(247, 255, 200) 1px 0 5px;
+    transform: scale(1.05);
+}
+
+.current-round {
+    font-size: 16px;
+    color: #fff;
+    text-shadow: #fc0 1px 0 10px;
+}
+
+.completed-round {
+    background-color: #cb91dcb6;
+    text-shadow: rgb(247, 255, 200) 1px 0 5px;
+    transform: scale(1.05);
+}

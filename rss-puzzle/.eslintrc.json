@@ -1,0 +1,25 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": ["plugin:@typescript-eslint/recommended", "airbnb-typescript/base", "prettier"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2021,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": ["@typescript-eslint", "import"],
+    "rules": {
+        "no-debugger": "off",
+        "no-console": "off",
+        "class-methods-use-this": "off",
+        "@typescript-eslint/no-explicit-any": "error",
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "semi": ["error", "always"],
+        "import/extensions": "off"
+    }
+}

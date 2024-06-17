@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/Roboto-Regular.ttf);
+}
+@import url(../../global.css);
+@import url(../../components/start-button/start-button.scss);
+
+.start-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/bigben.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+.game-name {
+    align-self: center;
+    background-color: #ffffffb4;
+    width: 310px;
+    text-align: center;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 34px;
+    margin-top: 20px;
+}
+
+.game-describtion {
+    align-self: center;
+    background-color: #ffffffb4;
+    width: 500px;
+    text-align: center;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.greeting {
+    align-self: center;
+    background-color: #ffffffb4;
+    width: fit-content;
+    text-align: center;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 20%;
+    padding: 0 10px;
+    opacity: 0;
+    animation: fadeInAnimation 4s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
